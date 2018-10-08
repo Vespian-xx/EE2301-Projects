@@ -1,7 +1,7 @@
 #Paul Warmuth
 #EE2301 XNF Solver
 #Created to return cleaned XNF form with a given input.
-#Expects input to be in SOP form. ie. A' B C' D + A B C' D etc. 
+#Expects input to be in SOP form. ie. A' B C' D + A B C' D etc.
 
 from pip._vendor.distlib.compat import raw_input
 
@@ -10,15 +10,15 @@ def expand(a, b):
     a = str(a).split("+")
     b = str(b).split("+")
     c = []
-    for i, j in enumerate(a):
-        for k, l in enumerate(b):
-            if "1" not in a[i]:
-                if "1" not in b[k]:  # (a+x)(b+x)
-                    c.extend([j + l])
+    for index1, item1 in enumerate(a):
+        for index2, item2 in enumerate(b):
+            if "1" not in a[index1]:
+                if "1" not in b[index2]:  # (a+x)(b+x)
+                    c.extend([item1 + item2])
                 else:
-                    c.extend([j])  # (a+x)(1+x)
-            if "1" in a[i]:  # (1+x)(b+x)
-                c.extend([l])
+                    c.extend([item1])  # (a+x)(1+x)
+            if "1" in a[index1]:  # (1+x)(b+x)
+                c.extend([item2])
     return "+".join(c)
 
 
