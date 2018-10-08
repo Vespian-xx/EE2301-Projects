@@ -1,0 +1,27 @@
+Combination   Associated Polynomial
+
+A' B' C' D'   1^A^B^C^D^AB^AC^AD^BC^BD^CD^ABC^ABD^ACD^BCD^ABCD
+A' B' C' D    D^AD^BD^CD^ABD^ACD^BCD^ABCD
+A' B' C D'    C^AC^BC^CD^ABC^ACD^BCD^ABCD
+A' B' C D     CD^ACD^BCD^ABCD
+A' B C' D'    B^AB^BC^BD^ABC^ABD^BCD^ABCD
+A' B C' D     BD^ABD^BCD^ABCD
+A' B C D'     BC^ABC^BCD^ABCD
+A' B C D      BCD^ABCD
+A B' C' D'    A^AB^AC^AD^ABC^ABD^ACD^ABCD
+A B' C' D     AD^ABD^ACD^ABCD
+A B' C D'     AC^ABC^ACD^ABCD
+A B' C D      ACD^ABCD
+A B C' D'     AB^ABC^ABD^ABCD
+A B C' D      ABD^ABCD
+A B C D'      ABC^ABCD
+A B C D       ABCD
+
+A' B' C'      1^A^B^C^AB^AC^BC^ABC
+A' B' C       C^AC^BC^ABC
+A' B C'       B^AB^BC^ABC
+A' B C        BC^ABC
+A B' C'       A^AB^AC^ABC
+A B' C        AC^ABC
+A B C'        AB^ABC
+A B C         ABC
