@@ -1,5 +1,9 @@
-from pip._vendor.distlib.compat import raw_input
+#Paul Warmuth
+#EE2301 XNF Solver
+#Created to return cleaned XNF form with a given input.
+#Expects input to be in SOP form. ie. A' B C' D + A B C' D etc. 
 
+from pip._vendor.distlib.compat import raw_input
 
 # a generalized algebraic expander ie. (a+b)(a+b)=aa+ab+bb. Cleans 1a, a1 to a.
 def expand(a, b):
