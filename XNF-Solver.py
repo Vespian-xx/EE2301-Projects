@@ -2,6 +2,7 @@
 #EE2301 XNF Solver
 #Created to return cleaned XNF form with a given input.
 #Expects input to be in SOP form. ie. A' B C' D + A B C' D etc.
+# 'denotes NOT, spaces denote multiplication and + denotes OR
 
 from pip._vendor.distlib.compat import raw_input
 
